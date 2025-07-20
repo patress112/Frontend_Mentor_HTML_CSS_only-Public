@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/static/Inter-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/static/Inter-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/static/Inter-SemiBold.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* BODY - GENERAL STYLES */
+
+body {
+    margin: 0 auto;
+    background-color: #141414; /* Dark background for the body, it is applied only for space filled with content */  
+    font-family: 'Inter', sans-serif; 
+}
+
+/* ARTICLE STYLES */
+
+article {
+    background-color: #1F1F1F; /* Darker background for articles */
+    color: #ECECEC;
+    margin: 25% 25%;
+    min-height: 10rem;
+    width: 50%;
+
+    flex-wrap: wrap; /* Umožní viac riadkov */
+    padding: 1rem; /* Pridanie paddingu pre lepší vzhľad */
+    box-sizing: border-box; /* Zabezpečí, že padding a border sa započítavajú do šírky a výšky */
+}
+
+/* HEADER STYLES */
+
+article header {
+    text-align: center;
+    color: #FDFDFD;
+}
+
+article header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+article header h4 {
+    color: #A7BD64;
+}
+
+/* LIST STYLES */
+
+.social-links {
+    
+    flex-wrap: wrap; /* Umožní viac riadkov */
+    padding: 0; /* Odstránenie paddingu */
+    margin: 0 auto; /* Zarovná do stredu (ak je šírka menšia než rodič) */
+    
+}
+
+.social-links ul {
+    display: flex; /* Použitie flexboxu pre zarovnanie li elementov */  
+    flex-direction: column;  
+}
+
+.social-links ul li {
+    flex: 1 1 calc(33.333% - 10px); /* Flexibilná šírka li elementov, aby sa zmestili do riadku */
+    background-color: #333333; /* Farba pozadia li elementov */
+    text-align: center; /* Zarovnanie textu na stred */
+    padding: 10px; /* Padding pre li elementy */
+    box-sizing: border-box; /* Zabezpečí, že padding a border sa započítavajú do šírky a výšky */
+    min-width: 120px; /* Minimálna šírka li elementov */
+    word-wrap: break-word; /* Zabezpečí, že dlhé slová sa zalomia */
+
+    gap: 10px; /* Medzera medzi li elementmi */
+    list-style: none; /* Odstránenie štýlu zoznamu */
+   
+    margin-bottom: 10px; /* Medzera medzi li elementmi */
+    list-style: none;
+
+    text-align: center;
+    align-items: center; /* Zarovnanie obsahu na stred */
+    justify-content: center;
+
+    border: 1px solid #2B3914; /* Rámček okolo li elementov */
+}
+
+.social-links li a {
+    color: #FDFDFD; /* Farba textu */
+    text-decoration: none; /* Odstránenie podčiarknutia */
+    display: block; /* Zabezpečí, že celý li element bude klikateľný */
+    width: 100%; /* Šírka odkazu zodpovedá šírke li elementu */
+    height: 100%; /* Výška odkazu zodpovedá výške li elementu */
+    overflow: hidden; /* Skryje pretečený obsah */
+    box-sizing: content-box; /* Zabezpečí, že padding a border sa započítavajú do šírky a výšky */
+    
+}
+
+.social-links ul li:hover,
+.social-links ul li:active{
+    background-color: #C4F82A; /* Zmena farby pozadia pri hover a active */
+}
+
+.social-links ul li a:hover,
+.social-links ul li a:active {
+    color: #2B3914; /* Zmena farby textu odkazu pri hover a active */
+}
