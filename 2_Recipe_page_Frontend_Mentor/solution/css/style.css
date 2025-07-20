@@ -1,0 +1,140 @@
+/*
+    GENERAL - BODY and FONTS
+    - nastavenie pozadia, zarovnanie a rozmery tela
+*/
+
+@font-face {
+    font-family: 'Young Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Outfit';
+    font-style: bold;
+    src: url(/fonts/outfit/static/Outfit-Black.ttf)
+}
+
+@font-face {
+    font-family: 'Outfit';
+    font-style: bold;
+    font-weight: 900;
+    src: url(/fonts/outfit/static/Outfit-ExtraBold.ttf)
+}
+
+@font-face {
+    font-family: 'Outfit';
+    font-style: italic;
+    font-weight: 100;
+    src: url(/fonts/outfit/static/Outfit-ExtraLight.ttf)
+}
+
+@font-face {
+    font-family: 'Outfit';
+    font-style: italic;
+    font-weight: 300;
+    src: url(/fonts/outfit/static/Outfit-Light.ttf)
+}
+
+@font-face {
+    font-family: 'Outfit';
+    font-style: regular;
+    font-weight: 500;
+    src: url(/fonts/outfit/static/Outfit-Medium.ttf)
+}
+
+@font-face {
+    font-family: 'Outfit';
+    font-style: italic;
+    font-weight: 600;
+    src: url(/fonts/outfit/static/Outfit-SemiBold.ttf)
+}
+
+@font-face {
+    font-family: 'Outfit';
+    font-style: italic;
+    font-weight: 200;
+    src: url(/fonts/outfit/static/Outfit-Thin.ttf)
+}
+
+body {
+    background: #F3E5D8; /* svetlé pozadie */
+    display: flex; /* použitie flexboxu pre zarovnanie obsahu */
+    flex-direction: column; /* usporiadanie obsahu vertikálne */
+    justify-content: center; /* zarovnanie obsahu na stred vertikálne */
+    align-items: center; /* zarovnanie obsahu na stred horizontálne */
+    height: 100vh; /* výška tela na 100% viewportu */
+    margin: 0; /* odstránenie predvolených okrajov */
+}
+
+/*
+    CONTAINER
+    - nastavenie kontajnera pre obsah stránky
+    - šírka, výška, zarovnanie a pozadie
+*/
+
+.container {
+    width: 600px;  /* alebo 90%, 800px atď. */
+    min-height: 200px; /* minimálna výška, prispôsobí sa obsahu */
+    margin: 0 auto;
+    background: #FFF7FC;
+
+    padding: 20px; /* vnútorné odsadenie */
+    border-radius: 20px; /* zaoblené rohy */
+}
+
+/*
+   CONTAINER HEADER - IMAGE
+    - nastavenie obrázka v hlavičke kontajnera
+*/
+
+.container img {
+    max-width: 100%; /* zabezpečí, že obrázok sa prispôsobí šírke kontajnera */
+    height: auto; /* zachová pomer strán obrázka */
+    display: block; /* odstráni medzery pod obrázkom */
+
+    border-radius: 20px; /* zaoblené rohy obrázka */
+}
+
+/*
+    CONTAINER HEADER - TEXT
+    - nastavenie nadpisu v hlavičke kontajnera
+    - veľkosť písma, farba a zarovnanie
+*/
+
+.container h1 {
+    font-size: 40px;
+    color: #2A2A27;
+    text-align: left;
+    margin: 20px 0;
+
+    font-family: 'YoungSerif', sans-serif;
+    font-weight: 600; /* tu môžete nastaviť požadovanú hrúbku písma */
+}
+
+/*
+    CONTAINER HEADER - DESCRIPTION
+    - nastavenie popisu v hlavičke kontajnera
+    - veľkosť písma, farba a zarovnanie
+*/
+
+.container p {
+    font-family: 'YoungSerif', sans-serif;
+    font-weight: normal;
+    color: #727271;
+}
+
+.preparation {
+    padding-left: 25px;
+    font-family: 'Outfit', sans-serif; /* použitie písma Outfit pre prípravu */
+}
+
+.preparation-time {
+    font-family: 'YoungSerif', sans-serif; /* použitie písma Young Serif pre čas prípravy */
+}
+
+.preparation-time li {
+    padding-left: 25px; /* odsadenie pre zoznam */
+    margin-bottom: 5px; /* medzera medzi položkami */
+}
