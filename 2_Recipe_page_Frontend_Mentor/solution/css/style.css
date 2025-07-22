@@ -12,50 +12,50 @@
 
 @font-face {
     font-family: 'Outfit';
-    font-style: bold;
-    src: url(/fonts/outfit/static/Outfit-Black.ttf)
+    font-weight: bold;
+    src: url(/fonts/outfit/static/Outfit-Black.ttf);
 }
 
 @font-face {
     font-family: 'Outfit';
     font-style: bold;
     font-weight: 900;
-    src: url(/fonts/outfit/static/Outfit-ExtraBold.ttf)
+    src: url(/fonts/outfit/static/Outfit-ExtraBold.ttf);
 }
 
 @font-face {
     font-family: 'Outfit';
     font-style: italic;
     font-weight: 100;
-    src: url(/fonts/outfit/static/Outfit-ExtraLight.ttf)
+    src: url(/fonts/outfit/static/Outfit-ExtraLight.ttf);
 }
 
 @font-face {
     font-family: 'Outfit';
     font-style: italic;
     font-weight: 300;
-    src: url(/fonts/outfit/static/Outfit-Light.ttf)
+    src: url(/fonts/outfit/static/Outfit-Light.ttf);
 }
 
 @font-face {
     font-family: 'Outfit';
-    font-style: regular;
+    font-style: normal;
     font-weight: 500;
-    src: url(/fonts/outfit/static/Outfit-Medium.ttf)
+    src: url(/fonts/outfit/static/Outfit-Medium.ttf);
 }
 
 @font-face {
     font-family: 'Outfit';
     font-style: italic;
     font-weight: 600;
-    src: url(/fonts/outfit/static/Outfit-SemiBold.ttf)
+    src: url(/fonts/outfit/static/Outfit-SemiBold.ttf);
 }
 
 @font-face {
     font-family: 'Outfit';
     font-style: italic;
     font-weight: 200;
-    src: url(/fonts/outfit/static/Outfit-Thin.ttf)
+    src: url(/fonts/outfit/static/Outfit-Thin.ttf);
 }
 
 body {
@@ -67,7 +67,7 @@ body {
     height: 100vh; /* výška tela na 100% viewportu */
     margin: 0; /* odstránenie predvolených okrajov */
 
-    padding: 10rem 0; /* vnútorné odsadenie */
+    padding: 20rem 0; /* vnútorné odsadenie */
 }
 
 /*
@@ -83,6 +83,8 @@ body {
 
     padding: 20px; /* vnútorné odsadenie */
     border-radius: 20px; /* zaoblené rohy */
+        border: 2px solid black; /* čierny okraj okolo tela */
+
 }
 
 /*
@@ -166,7 +168,7 @@ body {
 }
 
 .ingredients ul li, 
-.instructions ol li {{
+.instructions ol li {
     color: #585856; /* farba položiek v zozname */
 }
 
@@ -175,15 +177,22 @@ body {
     - nastavenie tabuľky s nutričnými hodnotami
 */
 
+.nutrition table {
+    border-collapse: collapse; /* zrušenie medzier medzi bunkami tabuľky. Používa sa pri celej tabuľke, nie pri jednotlivých bunkách */
+    width: 100%; /* šírka tabuľky na 100% kontajnera */
+    padding: 10px 30px;
+    box-sizing: border-box; /* zabezpečí, že padding sa započíta do šírky a výšky tabuľky */
+    color: #4A4947; /* farba textu v tabuľke */
+}
 
+.nutrition table tr td, 
+.nutrition table tr td strong{
+    border-bottom: 2px solid #E1E1E1; /* spodný okraj pre riadky tabuľky */
+    padding: 5px 50px;
+}
 
-
-
-
-
-
-
-
-
-
-
+.nutrition table tr td strong {
+    float: left; /* zarovnanie textu v bunke na ľavú stranu */
+    border-bottom: none;
+    color: #654036; /* farba textu v bunke */
+}
