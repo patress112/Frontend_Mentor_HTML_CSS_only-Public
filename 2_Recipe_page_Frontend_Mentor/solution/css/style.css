@@ -66,6 +66,8 @@ body {
     align-items: center; /* zarovnanie obsahu na stred horizontálne */
     height: 100vh; /* výška tela na 100% viewportu */
     margin: 0; /* odstránenie predvolených okrajov */
+
+    padding: 10rem 0; /* vnútorné odsadenie */
 }
 
 /*
@@ -76,8 +78,7 @@ body {
 
 .container {
     width: 600px;  /* alebo 90%, 800px atď. */
-    min-height: 200px; /* minimálna výška, prispôsobí sa obsahu */
-    margin: 0 auto;
+    margin: 0 auto; /* zarovnanie kontajnera na stred */
     background: #FFF7FC;
 
     padding: 20px; /* vnútorné odsadenie */
@@ -134,7 +135,55 @@ body {
     font-family: 'YoungSerif', sans-serif; /* použitie písma Young Serif pre čas prípravy */
 }
 
-.preparation-time li {
+.preparation-time li,
+.ingredients li, 
+.instructions li {
     padding-left: 25px; /* odsadenie pre zoznam */
     margin-bottom: 5px; /* medzera medzi položkami */
 }
+
+/*
+    INGREDIENTS + INSTRUCTIONS + NUTRITION
+    - nastavenie sekcií s ingredienciami a inštrukciami + tabuľka s nutričnými hodnotami
+    - veľkosť písma, farba a zarovnanie
+*/
+
+.instructions, .ingredients, .nutrition {
+    margin: 50px 0; /* medzera medzi sekciami */
+}
+
+.ingredients h2, 
+.instructions h2, 
+.nutrition h2 {
+    font-family: 'Outfit', sans-serif; /* použitie písma Young Serif pre ingrediencie */
+    color: #84493F; /* farba nadpisu */
+}
+
+.ingredients ul, 
+.instructions ol, 
+.nutrition table {
+    font-family: 'YoungSerif', sans-serif; /* použitie písma Young Serif pre zoznamy */
+}
+
+.ingredients ul li, 
+.instructions ol li {{
+    color: #585856; /* farba položiek v zozname */
+}
+
+/*
+    NUTRITION TABLE
+    - nastavenie tabuľky s nutričnými hodnotami
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
