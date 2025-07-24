@@ -1,0 +1,104 @@
+body {
+    background-color: #ECF2FF;
+
+}
+
+.container { 
+    max-width: 75%;
+    height: 50vh;
+    margin: 10rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid #d3cfcf;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.result {
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(45deg, #6040FD, #3F33EF);;
+    color: #FFFFFE;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.result h4 { 
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 3rem;
+}
+
+.result .result-circle {
+    text-align: center;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    
+    height: 7.5rem;
+    width: 7.5rem;
+
+    border-radius: 50%;
+    border: 1px solid #8f8f89;
+    
+    background-color: #4530E3;
+    margin: 5rem auto; /* Centering the circle */
+}
+
+.result-circle h1 {
+    font-size: 2.5rem;
+    margin-bottom: -1rem;
+}
+
+.result h2, p {
+    text-align: center;
+    padding: 0 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.summary {
+    width: 50%;
+    height: 100%;
+    background-color: #FFFFFF;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.summary h4 {
+    text-align: left;
+    margin-left: 2rem;
+    margin-top: 3rem;
+}
+
+ul li {
+    list-style: none;
+    margin: 0.5rem 2rem;
+    padding: 0.5rem;
+    background-color: #FFF6F7;
+    border: 1px solid #9c9c9c;
+}
+
+li {
+    border-radius: 1rem;
+}
+
+span {
+    float: right;
+}
+
+img {
+    margin-right: 1rem;
+
+}
+
+.summary button {
+    background-color: #303B59;
+    color: aquamarine;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 3rem 6rem;
+    padding: 1rem 5rem;
+    border-radius: 2rem;
+    font-weight: bold;
+}
+
+
